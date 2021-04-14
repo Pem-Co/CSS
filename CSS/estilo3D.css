@@ -1,0 +1,158 @@
+div{
+    font-family: 'Comic Sans MS';
+    background-color: #a8cf45;
+    margin: 10px 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+nav{
+    font-family: 'Comic Sans MS';
+    background: goldenrod;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: right;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin: 7px 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+li:nth-of-type(1) a:hover{
+    border-bottom: 3px solid green;
+}
+li:nth-of-type(2) a:hover{
+    border-bottom: 3px solid red;
+}
+li:nth-of-type(3) a:hover{
+    border-bottom: 3px solid darkblue;
+}
+li:nth-of-type(1) a:focus{
+    border-bottom: 3px solid green;
+}
+li:nth-of-type(2) a:focus{
+    border-bottom: 3px solid red;
+}
+li:nth-of-type(3) a:focus{
+    border-bottom: 3px solid darkblue;
+}
+.girox{
+    animation: 1.5s giroX 1;
+    backface-visibility: visible;
+}
+@keyframes giroX{
+    0%{
+        opacity: 0.5;
+        transform: perspective(200px)
+               rotateX(90deg);
+    }
+    40%{
+        transform: perspective(200px)
+               rotateX(-20deg);
+    }
+    70%{
+        transform: perspective(200px)
+               rotateX(20deg);
+    }
+}
+.giroy{
+    animation: 1.5s giroY 1;
+    backface-visibility: visible;
+}
+@keyframes giroY{
+    0%{
+        opacity: 0.5;
+        transform: perspective(200px)
+               rotateY(90deg);
+    }
+    40%{
+        transform: perspective(200px)
+               rotateY(-20deg);
+    }
+    70%{
+        transform: perspective(200px)
+               rotateY(20deg);
+    }
+}
+.giroxy{
+    animation: 1.5s giroXY 1;
+    backface-visibility: visible;
+}
+@keyframes giroXY{
+    0%{
+        opacity: 0.5;
+        transform: perspective(200px)
+               rotateY(90deg)
+               rotateX(90deg);
+    }
+    40%{
+        transform: perspective(200px)
+               rotateY(-20deg)
+               rotateX(-20deg);
+    }
+    70%{
+        transform: perspective(200px)
+               rotateY(20deg)
+               rotateX(20deg);
+    }
+}
+.giroz{
+    animation: 1.5s giroZ 1;
+    backface-visibility: visible;
+}
+@keyframes giroZ{
+    0%{
+        opacity: 0.5;
+        transform: perspective(200px)
+               rotateZ(90deg);
+    }
+    40%{
+        transform: perspective(200px)
+               rotateZ(-20deg);
+    }
+    70%{
+        transform: perspective(200px)
+               rotateZ(20deg);
+    }
+}
+.giroxyz{
+    animation: 1.5s giroXYZ 1;
+    backface-visibility: visible;
+}
+@keyframes giroXYZ{
+    0%{
+        opacity: 0.5;
+        transform: perspective(200px)
+               rotateX(90deg)
+               rotateY(90deg)
+               rotateZ(90deg);
+    }
+    40%{
+        transform: perspective(200px)
+               rotateX(-20deg)
+               rotateY(-20deg)
+               rotateZ(-20deg);
+    }
+    70%{
+        transform: perspective(200px)
+               rotateX(20deg)
+               rotateY(20deg)
+               rotateZ(20deg);
+    }
+}
